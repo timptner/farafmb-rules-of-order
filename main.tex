@@ -27,51 +27,65 @@
 \defineshorthand{'S}{\Sentence\ignorespaces}
 \defineshorthand{'.}{. \Sentence\ignorespaces}
 
+% Textfarben
+\usepackage{xcolor}
+\newcommand{\edit}[1]{{\color{red} #1}}
+\newcommand{\add}[1]{{\color{blue} #1}}
+
+% Durchstreichen
+\usepackage{ulem}
+\newcommand{\delete}[1]{{\color{red} \sout{#1}}}
+
 \begin{document}
 
 \title{Geschäftsordnung}
-\date{23.\,11.\,2020}
+\date{\edit{27.\,06.\,2022}}
 \author{Fachschaftsrat Maschinenbau}
 
 \maketitle
 
-Geschäftsordnung für den Fachschaftsrat Maschinenbau der Otto-von-Guericke-Universität Magdeburg - nachfolgend Fachschaftsrat genannt - in der Fassung vom 23.11.2020.
+Geschäftsordnung für den Fachschaftsrat Maschinenbau der Otto-von-Guericke-Universität Magdeburg - nachfolgend 
+Fachschaftsrat genannt - in der Fassung vom \edit{27.06.2022}.
 
 \tableofcontents
 
 \clearpage
 
-\addsec{Vorwort}
+\addsec{\edit{Begriffsbestimmungen}}
 
-Zum besseren Verständnis der Geschäftsordnung sind hier einige Erläuterung der verwendeten Formulierungen zu finden.
+Zum besseren Verständnis der Geschäftsordnung sind \edit{nachfolgend Erläuterungen zu den verwendeten Formulierungen zu 
+finden.}
 
 \minisec{Gewählte Mitglieder}
 
-Gewählte Mitglieder sind Mitglieder, die während der Hochschulwahlen gewählt wurden bzw. die Personen, die aufgrund der Beendigung der Mitgliedschaft eines Mitgliedes nachfolgen.
-Sie sind stimmberechtigt.
-
-\minisec{Stellvertretende Mitglieder}
-
-Stellvertretende Mitglieder sind Mitglieder, die als Stellvertretung während der Hochschulwahlen gewählt wurden.
-Sie können ein gewähltes Mitglied auf Sitzungen vertreten und erhalten hierdurch das Stimmrecht dieses Mitglieds.
-Ein stellvertretendes Mitglied kann pro Sitzung nur ein gewähltes Mitglied vertreten.
-
+Gewählte Mitglieder sind \edit{Studentinnen und Studenten}, die während der Hochschulwahlen \add{direkt} gewählt wurden
+\edit{oder indirekt aufgrund des Rücktritts} eines Mitgliedes nachfolgen. Sie sind stimmberechtigt.
 Bei Beendigung der Mitgliedschaft eines gewählten Mitgliedes wird ein stellvertretendes Mitglied zum Nachfolger.
 Hierbei ist die Reihenfolge entsprechend der amtlichen Wahlergebnisse zu berücksichtigten.
 
+\minisec{Stellvertretende Mitglieder}
+
+Stellvertretende Mitglieder sind \edit{Studentinnen und Studenten}, die \add{aufgrund der erreichten Stimmenzahl während
+der Hochschulwahlen als Stellvertretung} gewählt wurden. \edit{Jedes stellvertretende Mitglied} kann ein \add{nicht
+anwesendes} gewähltes Mitglied auf \add{den} Sitzungen \add{für die Dauer einer Sitzung} vertreten und \edit{erhält}
+hierdurch das Stimmrecht \edit{jenes} Mitglieds. \add{Dabei ist die Reihenfolge der Vertretungen festgelegt entsprechend
+der erreichten Stimmenzahl während der Hochschulwahlen.} Eine Stellvertretung kann pro Sitzung nur ein gewähltes
+Mitglied vertreten.
+
 \minisec{Kooptierte Mitglieder}
 
-Kooptierte Mitglieder sind Mitglieder, die durch Kooptation in den Fachschaftsrat aufgenommen wurden.
-Sie sind nicht stimmberechtigt.
+Kooptierte Mitglieder sind \edit{Studentinnen und Studenten}, die durch Kooptation in den Fachschaftsrat aufgenommen
+wurden. Sie sind nicht stimmberechtigt.
 
-\minisec{Stimmberechtigte Mitglieder}
+\minisec{\delete{Stimmberechtigte Mitglieder}}
 
-Stimmberechtigte Mitglieder sind gewählte oder stellvertretende Mitglieder, die auf einer Sitzung ein Stimmrecht besitzen.
+\delete{Stimmberechtigte Mitglieder sind gewählte oder stellvertretende Mitglieder, die auf einer Sitzung ein Stimmrecht
+besitzen.}
 
 \minisec{Textform}
 
-Bezeichnet das Verfassen eines (physischen oder digitalen) Dokuments, worin der Verfasser erkenntlich ist.
-Eine Unterschrift wird nicht benötigt.
+Bezeichnet das Verfassen eines (physischen oder digitalen) Dokuments, worin der Verfasser erkenntlich ist. Eine
+Unterschrift wird nicht benötigt.
 
 \minisec{Elektronische Form}
 
@@ -91,20 +105,20 @@ Bezeichnet das Verfassen eines physischen Dokuments mit Unterschrift der erstell
 
 \Clause{title={Anwendungsbereich}}
 
-Die Geschäftsordnung regelt insbesondere:
+Die Geschäftsordnung \add{des Fachschaftsrates} regelt insbesondere:
 \begin{enumerate}[\qquad a)]
     \item den Ablauf, die Organisation und Durchführung der Sitzungen;
     \item die Zusammensetzung;
-    \item die Arbeit und interne Struktur;
+    \item \add{sowie die} Arbeit und interne Struktur\edit{.}
 \end{enumerate}
-des Fachschaftsrates.
+\delete{des Fachschaftsrates.}
 
 \Clause{title={Zusammensetzung}}
 
-'S Der Fachschaftsrat besteht aus gewählten, stellvertretenden und kooptierten Mitglieder'.
-Die Anzahl der gewählten Mitglieder beträgt 5'.
-Jedes Mitglied des Fachschaftsrates muss auch Mitglied der Fachschaft sein'.
-Die Kooptation von Mitgliedern wird mit einer \nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder beschlossen.
+'S Der Fachschaftsrat besteht aus gewählten, stellvertretenden und kooptierten Mitglieder'. Die Anzahl der gewählten
+Mitglieder beträgt \edit{7}'. Jedes Mitglied des Fachschaftsrates muss auch Mitglied der Fachschaft \add{Maschinenbau an
+der Otto-von-Guericke-Universität Magdeburg} sein'. Die Kooptation von Mitgliedern wird mit einer
+\nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder beschlossen.
 
 Der Fachschaftsrat teilt seine Arbeit in die folgenden Sachgebiete ein:
 \begin{enumerate}[\qquad a)]
@@ -119,34 +133,35 @@ Der Fachschaftsrat teilt seine Arbeit in die folgenden Sachgebiete ein:
     \item Veranstaltungen.
 \end{enumerate}
 
-\Clause{title={Sprecher:innen \& Sekretär:innen}}
+\Clause{title={\edit{Vorstand}}}
 
-'S Der Fachschaftsrat wählt aus seiner Mitte Sprecher:innen und Sekretär:innen, welche die Leitung eines Sachgebietes übernehmen'.
-Jedes Sachgebiet hat nur eine:n Sprecher:in oder Sekretär:in.
+'S Der Fachschaftsrat wählt aus seiner Mitte \edit{Sprecherinnen und Sprecher} \delete{und Sekretär:innen}, welche
+\edit{gemeinsam den Vorstand bilden}'. \delete{Jedes Sachgebiet hat nur eine:n Sprecher:in oder Sekretär:in.}\add{Der
+Fachschaftsrat kann von mindestens einer Sprecherin oder einem Sprecher vertreten werden.}
 
-'S Der Fachschaftsrat wählt eine:n Sprecher:in für Verwaltung und eine:n Sprecher:in für Finanzen'.
-Die weiteren Sachgebiete können beliebig durch Sprecher:innen oder Sekretär:innen besetzt werden.
+'S Der Fachschaftsrat wählt \edit{eine Sprecherin oder einen Sprecher} für Verwaltung\edit{, eine Sprecherin oder einen
+Sprecher} für Finanzen \add{und eine Sprecherin oder einen Sprecher für Öffentlichkeitsarbeit}'. \delete{Die weiteren
+Sachgebiete können beliebig durch Sprecher:innen oder Sekretär:innen besetzt werden.}
 
-'S Als Sprecher:in können sich nur Studierende aus dem Kreis der gewählten Mitglieder des Fachschaftsrates aufstellen lassen'.
-Die Sprecher:innen bilden gemeinsam den Vorstand'.
-Der Fachschaftsrat kann von mindestens 2 Sprecher:innen vertreten werden.
+'S \edit{Für das Amt als Sprecherin oder Sprecher} können sich nur Studierende aus dem Kreis der gewählten Mitglieder
+des Fachschaftsrates aufstellen lassen'. \delete{Die Sprecher:innen bilden gemeinsam den Vorstand'. Der Fachschaftsrat
+kann von mindestens 2 Sprecher:innen vertreten werden.}
 
-'S Als Sprecher:in können sich nur Studierende aus dem Kreis der gewählten Mitglieder des Fachschaftsrates aufstellen lassen'.
-Die Sprecher:innen bilden gemeinsam den Vorstand'.
-Der Fachschaftsrat kann von mindestens 2 Sprecher:innen vertreten werden.
-
-'S Als Sekretär:in können sich nur Studierende aus dem Kreis der stellvertretenden oder kooptierten Mitglieder des Fachschaftsrates aufstellen lassen.
+\delete{'S Als Sekretär:in können sich nur Studierende aus dem Kreis der stellvertretenden oder kooptierten Mitglieder 
+des Fachschaftsrates aufstellen lassen.}
 
 \Clause{title={Wahlen}}
 
-'S Die Leitung eines Sachgebietes wird mit absoluter Mehrheit der stimmberechtigten Mitglieder gewählt'.
-Die Sachgebiete werden einzeln und getrennt voneinander gewählt.
+'S \edit{Das Amt einer Sprecherin oder eines Sprechers} wird mit absoluter Mehrheit der stimmberechtigten Mitglieder
+gewählt'. Die \edit{Ämter} werden einzeln und getrennt voneinander gewählt.
 
-Sollte im einem Wahlgang mit mehreren Kandidat:innen keine absolute Mehrheit der stimmberechtigten Mitglieder für eine:n Kandidat:in zu Stande kommen, ist ein weiterer Wahlgang für dieses Sachgebiet durchzuführen, wobei der:die Kandidat:in mit den wenigsten Stimmen nicht mehr zur Wahl steht.
+Sollte im einem Wahlgang mit mehreren \edit{Kandidatinnen oder Kandidaten} keine absolute Mehrheit der 
+stimmberechtigten Mitglieder für \edit{eine Kandidatin oder einen Kandidaten} zu Stande kommen, ist ein weiterer 
+Wahlgang für dieses \edit{Amt} durchzuführen, wobei \edit{die Kandidatin oder der Kandidat} mit den wenigsten Stimmen 
+nicht mehr zur Wahl steht.
 
-'S Die Leitung eines Sachgebiets wird für eine Wahlperiode gewählt'. 
-Eine Wiederwahl ist möglich'.
-Die Wahlperiode endet außerdem durch:
+'S \edit{Das Amt als Sprecherin oder Sprecher} wird für eine Wahlperiode gewählt'. Eine Wiederwahl ist möglich'. Die
+Wahlperiode endet außerdem durch:
 \begin{enumerate}[\qquad a)]
     \item Rücktritt;
     \item Austritt aus der Studierendenschaft;
@@ -155,40 +170,51 @@ Die Wahlperiode endet außerdem durch:
     \item Konstruktiven Misstrauensantrag.
 \end{enumerate}
 
-Ist ein Amt wegen vorzeitiger Beendigung der Amtszeit neu zu besetzen, wird dieses Amt für die laufende Wahlperiode neu gewählt.
+Ist ein Amt wegen vorzeitiger Beendigung der Amtszeit neu zu besetzen, wird dieses Amt für die laufende Wahlperiode neu 
+gewählt.
 
-\Clause{title={Aufgaben und Rechte der Sprecher:innen}}
+\Clause{title={Aufgaben und Rechte \edit{des Vorstands}}}
 
-Die Sprecher:innen vertreten die Fachschaft:
+\edit{Der Vorstand vertritt} die Fachschaft \add{gegenüber}:
 \begin{enumerate}[\qquad a)]
-    \item gegenüber staatlichen und gesellschaftlichen Institutionen;
+    \item \delete{gegenüber} staatlichen und gesellschaftlichen Institutionen;
     \item der Otto-von-Guericke-Universität Magdeburg;
     \item den Organen der Universitätsverwaltung;
     \item sowie der allgemeinen Öffentlichkeit.
 \end{enumerate}
 
-'S Die Sprecher:innen können im Zeitraum zwischen zwei Sitzungen im Rahmen ihres operativen Geschäfts über ein Gesamtbudget i.~H.~v. 200,00~€ verfügen'.
-Hierfür müssen mindestens 2 Sprecher:innen ihre Zustimmung schriftlich oder in elektronischer Form geben'.
-Dies betrifft insbesondere die Aufrechterhaltung des Bürobetriebs und die Vor- \& Nachbereitung der Sitzungen'.
-Der Verfügungsrahmen ist auch dann nicht zu überschreiten, wenn mehrere Ausgaben in einem direkten sachlichen Zusammenhang stehen'. 
-Die Sprecher:innen haben dem Fachschaftsrat auf der nächsten Sitzung Bericht zu erstatten'.
-Die Ausgaben werden im Protokoll festgehalten.
+'S \edit{Der Vorstand kann} im Zeitraum zwischen zwei Sitzungen im Rahmen \edit{seines} operativen Geschäfts
+über ein Gesamtbudget i.~H.~v. \edit{500,00}~€ \add{während eines Haushaltsjahres} verfügen'. Hierfür müssen mindestens
+2 \edit{Sprecherinnen und Sprecher} ihre Zustimmung schriftlich oder in elektronischer Form geben'. Dies betrifft
+insbesondere die Aufrechterhaltung des Bürobetriebs und die Vor- \& Nachbereitung der Sitzungen'. Der Verfügungsrahmen
+ist auch dann nicht zu überschreiten, wenn mehrere Ausgaben in einem direkten sachlichen Zusammenhang stehen'. 
+\edit{Der Vorstand hat} dem Fachschaftsrat auf der nächsten Sitzung Bericht zu erstatten'. Die Ausgaben
+werden im Protokoll festgehalten.
 
-Die Sprecher:innen haben eine zusätzliche Sitzung zum frühest zulässigen Termin einzuberufen, wenn dies von mindestens 4 Mitglieder des Fachschaftsrates oder mindestens einem:einer Sprecher:in schriftlich oder in elektronischer Form verlangt wird.
+\edit{Der Vorstand hat} eine zusätzliche Sitzung zum frühest zulässigen Termin einzuberufen \add{(siehe 
+\ref{ladungfrist})}, wenn dies von mindestens 4 Mitglieder des Fachschaftsrates oder \edit{wenigstens einer Sprecherin 
+oder einem Sprecher} schriftlich oder in elektronischer Form verlangt wird.
 
-Die Sprecher:innen haben die Möglichkeit schriftlich oder in elektronischer Form einen Umlaufbeschluss des Fachschaftsrates einzuholen.
+\edit{Der Vorstand hat} die Möglichkeit schriftlich oder in elektronischer Form einen Umlaufbeschluss des 
+Fachschaftsrates einzuholen.
 
-Der:Die Sprecher:in für Verwaltung hat insbesondere die folgenden Aufgaben:
+\edit{Die Sprecherin oder der Sprecher} für Verwaltung hat insbesondere die folgenden Aufgaben:
 \begin{enumerate}[\qquad a)]
     \item Vor- \& Nachbereitung der Sitzungen;
     \item Gewährleistung eines reibungslosen Bürobetriebes.
 \end{enumerate}
 
-Der:Die Sprecher:in für Finanzen hat insbesondere die folgenden Aufgaben:
+\edit{Die Sprecherin oder der Sprecher} für Finanzen hat insbesondere die folgenden Aufgaben:
 \begin{enumerate}[\qquad a)]
     \item Haushalts- \& Wirtschaftsführung im Rahmen der gesetzlichen Bestimmungen;
     \item Aufstellung des Haushaltsplanes und etwaiger Nachtragshaushaltspläne.
 \end{enumerate}
+
+\add{Die Sprecherin oder der Sprecher für Öffentlichkeitsarbeit hat insbesondere die folgenden Aufgaben:
+\begin{enumerate}[\qquad a)]
+    \item Schreiben von Stellungnahmen und ähnlichen öffentlichkeitswirksamen Texten;
+    \item Steuerung der öffentlichen Wahrnehmung inkl. medienwirksamer Auftritte.
+\end{enumerate}}
 
 \end{contract}
 
