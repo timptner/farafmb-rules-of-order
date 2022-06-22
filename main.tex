@@ -1,5 +1,5 @@
 \documentclass[%
-    parskip=half,
+	parskip=half,
 ]{scrartcl}
 
 % Deutsche Rechtschreibung
@@ -13,9 +13,9 @@
 \usepackage{nicefrac}
 
 \usepackage[%
-    clausemark=forceboth,
-    juratotoc,
-    juratocnumberwidth=2.5em,
+	clausemark=forceboth,
+	juratotoc,
+	juratocnumberwidth=2.5em,
 ]{scrjura}
 
 \pagestyle{myheadings}
@@ -26,6 +26,12 @@
 \useshorthands{'}
 \defineshorthand{'S}{\Sentence\ignorespaces}
 \defineshorthand{'.}{. \Sentence\ignorespaces}
+
+% Fußnoten mit römischen anstatt arabischen Zahlen
+\renewcommand{\thefootnote}{\roman{footnote}}
+
+% Erweiterte Formatierung von Tabellen
+\usepackage{booktabs}
 
 % Textfarben
 \usepackage{xcolor}
@@ -107,9 +113,9 @@ Bezeichnet das Verfassen eines physischen Dokuments mit Unterschrift der erstell
 
 Die Geschäftsordnung \add{des Fachschaftsrates} regelt insbesondere:
 \begin{enumerate}[\qquad a)]
-    \item den Ablauf, die Organisation und Durchführung der Sitzungen;
-    \item die Zusammensetzung;
-    \item \add{sowie die} Arbeit und interne Struktur\edit{.}
+	\item den Ablauf, die Organisation und Durchführung der Sitzungen;
+	\item die Zusammensetzung;
+	\item \add{sowie die} Arbeit und interne Struktur\edit{.}
 \end{enumerate}
 \delete{des Fachschaftsrates.}
 
@@ -122,15 +128,15 @@ der Otto-von-Guericke-Universität Magdeburg} sein'. Die Kooptation von Mitglied
 
 Der Fachschaftsrat teilt seine Arbeit in die folgenden Sachgebiete ein:
 \begin{enumerate}[\qquad a)]
-    \item Verwaltung;
-    \item Finanzen;
-    \item Öffentlichkeitsarbeit;
-    \item Studium \& Lehre;
-    \item Exkursionen;
-    \item Hochschulpolitik;
-    \item Mentoring;
-    \item Technik;
-    \item Veranstaltungen.
+	\item Verwaltung;
+	\item Finanzen;
+	\item Öffentlichkeitsarbeit;
+	\item Studium \& Lehre;
+	\item Exkursionen;
+	\item Hochschulpolitik;
+	\item Mentoring;
+	\item Technik;
+	\item Veranstaltungen.
 \end{enumerate}
 
 \Clause{title={\edit{Vorstand}}}
@@ -163,11 +169,11 @@ nicht mehr zur Wahl steht.
 'S \edit{Das Amt als Sprecherin oder Sprecher} wird für eine Wahlperiode gewählt'. Eine Wiederwahl ist möglich'. Die
 Wahlperiode endet außerdem durch:
 \begin{enumerate}[\qquad a)]
-    \item Rücktritt;
-    \item Austritt aus der Studierendenschaft;
-    \item Wechsel der Fachschaft;
-    \item Exmatrikulation;
-    \item Konstruktiven Misstrauensantrag.
+	\item Rücktritt;
+	\item Austritt aus der Studierendenschaft;
+	\item Wechsel der Fachschaft;
+	\item Exmatrikulation;
+	\item Konstruktiven Misstrauensantrag.
 \end{enumerate}
 
 Ist ein Amt wegen vorzeitiger Beendigung der Amtszeit neu zu besetzen, wird dieses Amt für die laufende Wahlperiode neu 
@@ -177,10 +183,10 @@ gewählt.
 
 \edit{Der Vorstand vertritt} die Fachschaft \add{gegenüber}:
 \begin{enumerate}[\qquad a)]
-    \item \delete{gegenüber} staatlichen und gesellschaftlichen Institutionen;
-    \item der Otto-von-Guericke-Universität Magdeburg;
-    \item den Organen der Universitätsverwaltung;
-    \item sowie der allgemeinen Öffentlichkeit.
+	\item \delete{gegenüber} staatlichen und gesellschaftlichen Institutionen;
+	\item der Otto-von-Guericke-Universität Magdeburg;
+	\item den Organen der Universitätsverwaltung;
+	\item sowie der allgemeinen Öffentlichkeit.
 \end{enumerate}
 
 'S \edit{Der Vorstand kann} im Zeitraum zwischen zwei Sitzungen im Rahmen \edit{seines} operativen Geschäfts
@@ -200,20 +206,20 @@ Fachschaftsrates einzuholen.
 
 \edit{Die Sprecherin oder der Sprecher} für Verwaltung hat insbesondere die folgenden Aufgaben:
 \begin{enumerate}[\qquad a)]
-    \item Vor- \& Nachbereitung der Sitzungen;
-    \item Gewährleistung eines reibungslosen Bürobetriebes.
+	\item Vor- \& Nachbereitung der Sitzungen;
+	\item Gewährleistung eines reibungslosen Bürobetriebes.
 \end{enumerate}
 
 \edit{Die Sprecherin oder der Sprecher} für Finanzen hat insbesondere die folgenden Aufgaben:
 \begin{enumerate}[\qquad a)]
-    \item Haushalts- \& Wirtschaftsführung im Rahmen der gesetzlichen Bestimmungen;
-    \item Aufstellung des Haushaltsplanes und etwaiger Nachtragshaushaltspläne.
+	\item Haushalts- \& Wirtschaftsführung im Rahmen der gesetzlichen Bestimmungen;
+	\item Aufstellung des Haushaltsplanes und etwaiger Nachtragshaushaltspläne.
 \end{enumerate}
 
 \add{Die Sprecherin oder der Sprecher für Öffentlichkeitsarbeit hat insbesondere die folgenden Aufgaben:
 \begin{enumerate}[\qquad a)]
-    \item Schreiben von Stellungnahmen und ähnlichen öffentlichkeitswirksamen Texten;
-    \item Steuerung der öffentlichen Wahrnehmung inkl. medienwirksamer Auftritte.
+	\item Formulierung von Stellungnahmen und ähnlichen öffentlichkeitswirksamen Texten;
+	\item Steuerung der öffentlichen Wahrnehmung insbesondere durch Verwendung medialer Plattformen.
 \end{enumerate}}
 
 \end{contract}
@@ -222,45 +228,51 @@ Fachschaftsrates einzuholen.
 
 \begin{contract}
 
-\Clause{title={Einberufung}}\label{ladung}
+\Clause{title={Einberufung}}
 
-'S Die Sitzungen des Fachschaftsrates finden i.~d.~R. alle 2 Wochen statt'.
-In der vorlesungsfreien Zeit kann von dieser Regelung abgesehen werden.
+'S Die Sitzungen des Fachschaftsrates finden i.~d.~R. alle 2 Wochen statt'. In der vorlesungsfreien Zeit kann von 
+dieser Regelung abgesehen werden.
 
 Die Ladungsfrist beträgt 3 Tage.\label{ladungsfrist}
 
-Die Einberufung erfolgt durch den Vorstand, i.~d.~R. durch den:die Sprecher:in für Verwaltung.
+Die Einberufung erfolgt durch den Vorstand, i.~d.~R. durch \edit{die Sprecherin oder den Sprecher} für Verwaltung.
 
-'S Die Einladung zur Sitzung hat mindestens:
+'S Die Einladung zur Sitzung hat mindestens \add{zu enthalten}:
 \begin{enumerate}[\qquad a)]
-    \item Datum und Zeit der Sitzung;
-    \item Ort der Sitzung;
-    \item Vorschlag der Tagesordnung;
-    \setcounter{enumitem}{\value{enumi}}
+	\item Datum und \edit{Uhrzeit} der Sitzung;
+	\item Ort der Sitzung;
+	\item Vorschlag der Tagesordnung\edit{.}
+	\setcounter{enumitem}{\value{enumi}}
 \end{enumerate}
-zu enthalten'.
-Ferner sollten auch:
+\delete{enthalten sein.}
+'S Ferner sollten auch \add{enthalten sein}:
 \begin{enumerate}[\qquad a)]
-    \setcounter{enumi}{\value{enumitem}}
-    \item Anträge, die nicht persönlicher Natur sind;
-    \item Berichte;
+	\setcounter{enumi}{\value{enumitem}}
+	\item Anträge, die nicht persönlicher Natur sind;
+	\item Berichte\edit{.}
 \end{enumerate}
-enthalten sein.
+\delete{enthalten sein.}
 
-Die Einladung ist an alle Mitglieder des Fachschaftsrates sowie an zum Zeitpunkt der Einladung benannte Stellvertreter:innen, Antragsteller:innen und bekannte Gäste in Textform per E-Mail zu verschicken.
+Die Einladung ist an alle Mitglieder des Fachschaftsrates sowie an \delete{zum Zeitpunkt der Einladung benannte 
+Stellvertreter:innen,} \edit{einen Antrag stellende Personen} und bekannte Gäste in Textform per E-Mail zu verschicken.
 
 \Clause{title={Öffentlichkeit}}
 
 Die Sitzungen des Fachschaftsrates sind i.~d.~R. öffentlich.
 
-'S Der Fachschaftsrat kann mit \nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder für einzelne Tagesordnungspunkte den Ausschluss der Öffentlichkeit beschließen'.
-Sollte eine antragstellende Person um Auschluss der Öffentlichkeit bitten, wird dies mit absoluter Mehrheit der anwesenden Mitglieder beschlossen.
+'S Der Fachschaftsrat kann mit \nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder für einzelne 
+Tagesordnungspunkte den Ausschluss der Öffentlichkeit beschließen'. \edit{Einen Antrag stellende Personen können 
+während der Behandlung ihres Antrages um den Ausschluss der Öffentlichkeit bitten, welches mit absoluter Mehrheit der 
+stimmberechtigten Mitglieder beschlossen wird.}
 
-Anträge persönlicher Natur werden stets nicht-öffentlich behandelt.
+Anträge persönlicher Natur werden stets \edit{unter Ausschluss der Öffentlichkeit} behandelt.
 
-Der Fachschaftsrat kann mit absoluter Mehrheit der stimmberechtigten Mitglieder zusätzliche beteiligte oder beratende Personen zu nicht-öffentlichen Teilen der Sitzung hinzuziehen.
+Der Fachschaftsrat kann mit absoluter Mehrheit der stimmberechtigten Mitglieder zusätzliche beteiligte oder beratende 
+Personen zu \delete{nicht-öffentlichen} Teilen der Sitzung hinzuziehen\add{, welche unter Ausschluss der Öffentlichkeit 
+stattfinden}.
 
-Über nicht-öffentliche Teile der Sitzung haben alle Beteiligten Verschwiegenheit zu bewahren.
+\edit{Alle anwesenden Personen, die während des Ausschlusses der Öffentlichkeit an der Sitzung teilgenommen haben, sind 
+zur Verschwiegenheit verpflichtet.}\footnote{\add{Die Verletzung der Schweigepflicht ist strafbar.}}
 
 \Clause{title={Protokoll}}
 
@@ -268,124 +280,138 @@ Der Fachschaftsrat kann mit absoluter Mehrheit der stimmberechtigten Mitglieder 
 
 Inhalt des Protokolls sind:
 \begin{enumerate}[\qquad a)]
-    \item Ort, Sitzungsleitung, Protokollant sowie anwesende Mitglieder und Gäste;
-    \item Abstimmungen, Beschlüsse und die jeweiligen Ergebnisse;
-    \item Berichte von Sprecher:innen und Ratssekretär:innen;
-    \item sowie durch die Geschäftsordnung, Finanzordnung oder Satzung vorgeschriebenen Anzeigen.
+	\item \add{Zeitpunkt und} Ort\edit{;}
+	\item \edit{Rede}leitung, Protokollant sowie anwesende Mitglieder und Gäste;
+	\item Abstimmungen, Beschlüsse\add{, Wahlen} und die jeweiligen Ergebnisse;
+	\item Berichte von \edit{Sprecherinnen und Sprechern} \add{und bei Bedarf von weiteren Mitgliedern};
+	\item sowie durch die Geschäftsordnung, Finanzordnung oder Satzung vorgeschriebenen Anzeigen.
 \end{enumerate}
 
-Das nachbereitete Protokoll ist zeitnah über die internen Strukturen des Fachschaftsrates den Mitgliedern zugänglich zu machen, spätestens jedoch bis zum Zeitpunkt der Einladung zur nachfolgenden Sitzung.
+Das nachbereitete Protokoll ist zeitnah über die internen Strukturen des Fachschaftsrates den Mitgliedern zugänglich zu 
+machen, spätestens jedoch bis zum Zeitpunkt der Einladung zur nachfolgenden Sitzung.
 
-'S Das Protokoll gilt als beschlossen wenn auf jener Sitzung, zu welcher das nachbereitete Protokoll den Mitgliedern zugänglich gemacht wurde, kein Widerspruch durch ein Mitglied erhoben wird'.
-Im Falle eines Widerspruches sind die Änderungsvorschläge des widersprechenden Mitgliedes als Änderungsanträge zu behandeln und anschließend das Protokoll mit den angenommenen Änderungen durch den Fachschaftsrat zu beschließen.
+'S Das Protokoll gilt als beschlossen wenn auf jener Sitzung, zu welcher das nachbereitete Protokoll den Mitgliedern 
+zugänglich gemacht wurde, kein Widerspruch durch ein Mitglied erhoben wird'. Im Falle eines Widerspruches sind die 
+Änderungsvorschläge des widersprechenden Mitgliedes als Änderungsanträge zu behandeln und anschließend das Protokoll 
+mit den angenommenen Änderungen durch den Fachschaftsrat zu beschließen.
 
-'S Öffentliche Teile eines beschlossenen Protokolls sind der Studierendenschaft zugänglich zu machen'.
-Wurde ein Protokoll durch den Fachschaftsrat abgelehnt ist über das weitere Verfahren durch den Fachschaftsrat zu beraten'.
-Die Beschlüsse, auch aus nicht-öffentlichen Teilen der Sitzung, sind in jedem Fall (anonymisiert) zu veröffentlichen.
+'S Öffentliche Teile eines beschlossenen Protokolls sind der Studierendenschaft zugänglich zu machen'. Wurde ein 
+Protokoll durch den Fachschaftsrat abgelehnt ist über das weitere Verfahren durch den Fachschaftsrat zu beraten'. Die 
+Beschlüsse, auch aus \delete{nicht-öffentlichen} Teilen der Sitzung\add{, welche unter Ausschluss der Öffentlichkeit 
+stattgefunden haben}, sind in jedem Fall (anonymisiert) zu veröffentlichen.
 
 \Clause{title={Beschlussfassung}}
 
 Der Fachschaftsrat ist beschlussfähig, wenn
 \begin{enumerate}[\qquad a)]
-    \item die Ladung ordnungsgemäß erfolgt ist; %(siehe \ref{ladung}, insb. \refParS{ladungsfrist});
-    \item mehr als die Hälfte der stimmberechtigten Mitglieder anwesend ist.
+	\item die Ladung \add{(entsprechend \refClause{ladungsfrist})} ordnungsgemäß erfolgt ist;
+	\item mehr als die Hälfte der stimmberechtigten Mitglieder anwesend ist.
 \end{enumerate}
 
-Die Beschlussfähigkeit ist zu Beginn der Sitzung festzuhalten.
+Die Beschlussfähigkeit ist zu Beginn der Sitzung \add{im Protokoll} festzuhalten.
 
-'S Sollte der Fachschaftsrat auf zwei aufeinander folgenden Sitzungen nicht beschlussfähig sein, können die Sprecher:innen eine Sitzung einberufen, in welcher der Fachschaftsrat unter Anwesenheit einer beliebigen Anzahl an stimmberechtigten Mitglieder beschlussfähig ist'.
-Dies muss in der Einladung deutlich gekennzeichnet sein'.
-Die Einladung muss weiterhin ordnungsgemäß erfolgen.
+'S Sollte der Fachschaftsrat auf zwei aufeinander folgenden Sitzungen nicht beschlussfähig sein, \edit{kann der 
+Vorstand} eine Sitzung einberufen, in welcher der Fachschaftsrat unter Anwesenheit einer beliebigen Anzahl an 
+stimmberechtigten Mitglieder beschlussfähig ist'. Dies muss in der Einladung deutlich gekennzeichnet sein'. Die 
+Einladung muss weiterhin ordnungsgemäß erfolgen.
 
-Der Fachschaftsrat entscheidet auf seinen Sitzungen i.~d.~R. mit einfacher Mehrheit der abgegebenen gültigen Stimmen, sofern durch Satzung, Finanz-, Beitrags- und Geschäftsordnung keine andere Mehrheit vorgeschrieben ist.
+Der Fachschaftsrat entscheidet auf seinen Sitzungen i.~d.~R. mit einfacher Mehrheit der abgegebenen gültigen Stimmen, 
+sofern durch Satzung, Finanz-, Beitrags- und Geschäftsordnung keine andere Mehrheit vorgeschrieben ist.
 
-'S Für Umlaufbeschlüsse sind nur gewählte Mitglieder des Fachschaftsrates stimmberechtigt'.
-Der Umlaufbeschluss gilt als angenommen, sobald die absolute Mehrheit diesem zugestimmt hat'.
-Ist der Umlaufbeschluss bis zur nächsten Sitzung noch nicht entschieden, so ist der Beschluss regulär auf der Sitzung zu tätigen.
+'S Für Umlaufbeschlüsse sind nur gewählte Mitglieder des Fachschaftsrates stimmberechtigt'. Der Umlaufbeschluss gilt 
+als angenommen, sobald die absolute Mehrheit \add{der stimmberechtigten Mitglieder} diesem zugestimmt hat'. Ist der 
+Umlaufbeschluss bis zur nächsten Sitzung noch nicht entschieden, so ist der Beschluss regulär auf der Sitzung zu 
+tätigen.
 
 Die Beschlüsse des Fachschaftsrates sind bindend.
 
-\Clause{title={Sitzungsleitung}}
+\Clause{title={\edit{Redeleitung}}}
 
-'S Die Sitzungsleitung leitet die Sitzung'.
-Sie ist angehalten, ein heterogenes Meinungsbild einzuholen und eine zielführende Diskussion zu ermöglichen'.
-Sie erteilt und entzieht das Wort.
+'S Die \edit{Redeleitung} leitet die Sitzung'. Sie ist angehalten, ein heterogenes Meinungsbild einzuholen und eine 
+zielführende Diskussion zu ermöglichen'. Sie erteilt und entzieht das Wort.
 
 \Clause{title={Anträge zur Geschäftsordnung}}
 
-Anträge zur Geschäftsordnung sind umgehend, jedoch ohne einen Wortbeitrag zu unterbrechen, zu behandeln.
+Anträge zur Geschäftsordnung sind umgehend, jedoch ohne \edit{Unterbrechung eines gegenwärtigen Wortbeitrages}, zu 
+behandeln.
 
-'S Bei allen Anträgen zur Geschäftsordnung ist eine Gegenrede möglich'.
-Sollte keine Gegenrede erfolgen, so gilt der Antrag zur Geschäftsordnung als einstimmig angenommen.
+'S Bei allen Anträgen zur Geschäftsordnung ist eine Gegenrede\footnote{\add{Anstelle einer inhaltlichen Gegenrede 
+ist ebenso eine formale Gegenrede für die Initierung der Abstimmung ausreichend.}} möglich'. Sollte keine Gegenrede 
+erfolgen, so gilt der Antrag zur Geschäftsordnung als einstimmig angenommen.
 
-Die Anträge zur Geschäftsordnung werden mit folgenden Mehrheiten angenommen.
-Durch Antrag eines Mitglieds:
+Die Anträge zur Geschäftsordnung werden mit folgenden Mehrheiten angenommen. \\
+\newline
+\textit{Durch Antrag eines Mitglieds:}
 \begin{enumerate}[\qquad a)]
-    \item Namentliche Abstimmung
-    \item Geheime Abstimmung
-    \item Feststellung der Beschlussfähigkeit
-    \item Rede zu rechtlichen Gegebenheiten
-    \setcounter{enumitem}{\value{enumi}}
+	\item Namentliche Abstimmung
+	\item Geheime Abstimmung
+	\item Feststellung der Beschlussfähigkeit
+	\item Rede zu rechtlichen Gegebenheiten
+	\setcounter{enumitem}{\value{enumi}}
 \end{enumerate}
-Mit einfacher Mehrheit der abgegebenen Stimmen:
+\textit{Mit einfacher Mehrheit der abgegebenen Stimmen:}
 \begin{enumerate}[\qquad a)]
-    \setcounter{enumi}{\value{enumitem}}
-    \item Überweisung in eine Arbeitskreis / -gruppe oder an die Leitung eines Sachbereichs
-    \item Unterbrechung der Sitzung
-    \item Ende der Debatte und sofortige Abstimmung
-    \item Schluss mit der Redner*innen-Liste
-    \item Eintritt in einen Tagesordnungspunkt
-    \setcounter{enumitem}{\value{enumi}}
+	\setcounter{enumi}{\value{enumitem}}
+	\item Überweisung \edit{an einen dafür einberufenen Arbeitskreis}
+	\item Unterbrechung der Sitzung\footnote{\add{Es ist die Dauer der Unterbrechung bei Antragstellung zu nennen.}}
+	\item Ende der Debatte und sofortige Abstimmung
+	\item \edit{Schließung der Redeliste}
+	\item Eintritt in einen Tagesordnungspunkt
+	\setcounter{enumitem}{\value{enumi}}
 \end{enumerate}​
-Mit absoluter Mehrheit der stimmberechtigten Mitglieder:
+\textit{Mit absoluter Mehrheit der stimmberechtigten Mitglieder:}
 \begin{enumerate}[\qquad a)]
-    \setcounter{enumi}{\value{enumitem}}
-    \item Änderung der Tagesordnung (mit Vorschlag)
-    \item Behandlung unter einem späteren Tagesordnungspunkt
-    \item Vertagung
-    \setcounter{enumitem}{\value{enumi}}
+	\setcounter{enumi}{\value{enumitem}}
+	\item Änderung der Tagesordnung (mit Vorschlag)
+	\item Behandlung unter einem späteren Tagesordnungspunkt
+	\item Vertagung
+	\setcounter{enumitem}{\value{enumi}}
 \end{enumerate}
-Mit \nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder:
+\textit{Mit \nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder:}
 \begin{enumerate}[\qquad a)]
-    \setcounter{enumi}{\value{enumitem}}
-    \item Wechsel der Sitzungsleitung
-    \item Nichtbefassung
+	\setcounter{enumi}{\value{enumitem}}
+	\item Wechsel der \edit{Redeleitung}
+	\item Nichtbefassung
 \end{enumerate}
-\ % fix formatting
 
-'S Für den Fall, das sowohl ein Antrag auf geheime als auch namentliche Abstimmung gestellt wird, wird zuerst über die geheime Abstimmung abgestimmt'.
-Sollte die geheime Abstimmung angenommen werden, entfällt eine Abstimmung über eine namentliche Abstimmung.
+'S Für den Fall, das sowohl ein Antrag auf geheime als auch namentliche Abstimmung gestellt wird, \edit{so ist} zuerst 
+über die geheime Abstimmung \edit{abzustimmen}'. Sollte die geheime Abstimmung angenommen werden, entfällt \edit{die} 
+Abstimmung über eine namentliche Abstimmung.
 
-Anträge zur Geschäftsordnung werden nicht namentlich oder geheim abgestimmt.
+Anträge zur Geschäftsordnung werden \edit{weder} namentlich \edit{noch} geheim abgestimmt.
 
 \Clause{title={Anträge}}
 
-'S Anträge sind Entwürfe zu Beschlüssen'.
-Diese sind vor Einberufung der Sitzung bei dem:der Sprecher:in für Verwaltung einzureichen und sind mit der Einladung zur verteilen.
+'S Anträge sind Entwürfe zu Beschlüssen'. Diese sind vor Einberufung der Sitzung bei \edit{der Sprecherin oder dem 
+Sprecher} für Verwaltung einzureichen und sind mit der Einladung zur verteilen.
 
-'S Ein Antrag wird i.~d.~R. nur in Anwesenheit der antragstellenden Person behandelt'.
-Andernfalls wird der Antrag auf die nächste Sitzung vertagt'.
-Ein Antrag wird höchstens dreimal vertagt.
+'S Ein Antrag wird i.~d.~R. nur in Anwesenheit \edit{jener} Person behandelt\add{, welche den Antrag gestellt 
+hat}'. Andernfalls wird der Antrag auf die nächste Sitzung vertagt'. Ein Antrag wird höchstens dreimal vertagt.
 
-'S Initiativanträge sind Anträge, die nach Ablauf der regulären Einreichungsfrist bei dem:der Sprecher:in für Verwaltung eingereicht wurden und nicht in regulärer Frist gestellt werden konnten oder auf einem Sachverhalt beruhen der nach Einladung bekannt geworden ist'.
-Initiativanträge werden nur behandelt, wenn sie von mindestens drei Mitgliedern, einem:einer Sprecher:in unterschrieben oder zum Beschluss der Tagesordnung befürwortet worden sind.
+'S Initiativanträge sind Anträge, die nach Ablauf der regulären Einreichungsfrist bei \edit{der Sprecherin oder dem 
+Sprecher} für Verwaltung eingereicht wurden und nicht in regulärer Frist gestellt werden konnten oder auf einem 
+Sachverhalt beruhen der nach Einladung bekannt geworden ist'. Initiativanträge werden nur behandelt, wenn sie von 
+mindestens drei Mitgliedern, \edit{einer Sprecherin oder einem Sprecher} unterschrieben oder zum Beschluss der 
+Tagesordnung befürwortet worden sind.
 
-'S Konstruktive Misstrauensanträge müssen 10 Tage vor Sitzungsbeginn schriftlich oder in elektronischer Form eingegangen sein'.
-Konstruktive Misstrauensanträge gelten als bestätigt, wenn sie mit \nicefrac{2}{3}-Mehrheit der stimmberechtigten Mitglieder beschlossen worden sind'.
-Misstrauensanträge sind vertraulich zu behandeln, werden geheim abgestimmt und können nicht initiativ eingebracht werden.
+'S Konstruktive Misstrauensanträge müssen 10 Tage vor Sitzungsbeginn schriftlich oder in elektronischer Form 
+eingegangen sein'. Konstruktive Misstrauensanträge gelten als bestätigt, wenn sie mit \nicefrac{2}{3}-Mehrheit der 
+stimmberechtigten Mitglieder beschlossen worden sind'. Misstrauensanträge sind vertraulich zu behandeln, werden geheim 
+abgestimmt und können nicht initiativ eingebracht werden.
 
-'S Mitglieder des Fachschaftsrates können während einer Sitzung Änderungen an den Anträgen vorschlagen'.
-Ein Änderungsantrag darf dem Zweck, Sinn sowie der Natur des ursprünglichen Antrages nicht widersprechen.
+'S Mitglieder des Fachschaftsrates können während einer Sitzung Änderungen an den Anträgen vorschlagen'. Ein 
+Änderungsantrag darf dem Zweck, Sinn sowie der Natur des ursprünglichen Antrages nicht widersprechen.
 
 \Clause{title={Abstimmungen}}
 
-Vor jeder Abstimmung liest die Sitzungsleitung den Gegenstand der Abstimmung genau und neutral vor.
+Vor jeder Abstimmung liest die \edit{Redeleitung} den Gegenstand der Abstimmung genau und neutral vor.
 
-'S Vor der Abstimmung über einen Antrag sind alle dazu gestellten Änderungsanträge, in der Reihenfolge ihrer Tragweite, beginnend mit dem weitest gehenden, abzustimmen'.
-Erst danach darf über den Hauptantrag entschieden werden.
+'S Vor der Abstimmung über einen Antrag sind alle dazu gestellten Änderungsanträge, in der Reihenfolge ihrer Tragweite, 
+beginnend mit dem weitest gehenden, abzustimmen'. Erst danach darf über den Hauptantrag entschieden werden.
 
-'S Anträge über die einmal abgestimmt wurde, können auf der laufenden Sitzung nicht noch einmal zur Abstimmung gestellt werden'.
-Ausgenommen hiervon sind unter anderem der Haushaltsplan und andere Anträge, sofern dies in Satzung, Beitrags-, Finanz- oder Geschäftsordnung anders geregelt ist.
+'S Anträge über die einmal abgestimmt wurde, können auf der laufenden Sitzung nicht noch einmal zur Abstimmung gestellt 
+werden'. Ausgenommen hiervon sind unter anderem der Haushaltsplan und andere Anträge, sofern dies in Satzung, 
+Beitrags-, Finanz- oder Geschäftsordnung anders geregelt ist.
 
 \end{contract}
 
@@ -395,25 +421,37 @@ Ausgenommen hiervon sind unter anderem der Haushaltsplan und andere Anträge, so
 
 \Clause{title={Einbeziehung von stellvertretenden Mitgliedern}}
 
-'S Ist ein gewähltes Mitglied des Fachschaftsrates nicht in der Lage an den Sitzungen des Fachschaftsrates teilzunehmen, so wird es durch ein stellvertretenden Mitglied für die Dauer der Sitzung vertreten'.
-Das stellvertretende Mitglied ergibt sich entsprechend der Reihenfolge laut den amtlichen Wahlergebnissen'.
-Die Mitgliedschaft wird in diesem Falle nicht beendet, lediglich das Stimmrecht wird für die Dauer der Sitzung abgetreten'.
-Die Abwesenheit ist dem:der Sprecher:in für Verwaltung bis zum Beginn der Sitzung mitzuteilen.
+'S Ist ein gewähltes Mitglied des Fachschaftsrates nicht in der Lage an den Sitzungen des Fachschaftsrates 
+teilzunehmen, so wird es durch ein stellvertretenden Mitglied für die Dauer der Sitzung vertreten'. Das 
+stellvertretende Mitglied ergibt sich entsprechend der Reihenfolge laut den amtlichen Wahlergebnissen'. Die 
+Mitgliedschaft wird in diesem Falle nicht beendet, lediglich das Stimmrecht wird für die Dauer der Sitzung abgetreten'. 
+Die Abwesenheit ist \edit{der Sprecherin oder dem Sprecher} für Verwaltung bis zum Beginn der Sitzung mitzuteilen.
 
-'S Ist eine Vertretung nicht rechtzeitig bestimmt, so wird zum Zeitpunkt der Feststellung der Beschlussfähigkeit der Sitzung ein:e anwesende:r Stellvertreter:in festgelegt, welche:r das Stimmrecht für die Dauer der Sitzung wahrnimmt'.
-Sollte mehr als ein stellvertretendes Mitglied anwesend sein, übernimmt das Mitglied mit den meisten Stimmen laut den amtlichen Wahlergebnissen die Vertretung.
+'S Ist eine Vertretung nicht rechtzeitig bestimmt, so wird zum Zeitpunkt der Feststellung \edit{einer} 
+Beschlussfähigkeit \edit{für die gegenwärtige} Sitzung \edit{ein anwesendes stellvertretendes Mitglied} festgelegt, 
+\edit{welches} das Stimmrecht für die Dauer der Sitzung wahrnimmt'. Sollte mehr als ein stellvertretendes Mitglied 
+anwesend sein, übernimmt \edit{jenes stellvertretende} Mitglied mit den meisten Stimmen laut den amtlichen 
+Wahlergebnissen die Vertretung.
 
-Gibt es mehrere Listen im Fachschaftsrat gelten als mögliche Vertretung nur die Stellvertreter:innen der jeweiligen Liste des abwesenden Mitglieds.
+Gibt es mehrere Listen\footnote{\add{Als Listen werden die jeweils zur Wahl angetretenen politischen Gruppierungen 
+eines Gremiums bezeichnet.}} im Fachschaftsrat gelten als mögliche Vertretung nur die \edit{stellvertretenden 
+Mitglieder} der 
+jeweiligen Liste des abwesenden Mitglieds.
 
-Die für die Sitzung notwendigen Unterlagen werden der Vertretung zur Verfügung gestellt.
+Die \edit{zur aktiven Teilnahme an der} Sitzung notwendigen Unterlagen werden der Vertretung zur Verfügung gestellt.
 
-'S Sollte ein gewähltes Mitglied drei Mal in Folge unentschuldigt und ohne benannte zeitweilige Vertretung den ordentlichen Sitzungen des Fachschaftsrates fernbleiben, verliert das Mitglied seine Mitgliedschaft'.
-Entsprechend wird das Stimmrecht auf den:die nächste Stellvertreter:in der Liste der amtlichen Wahlergebnisse übertragen'.
-Darüber informiert der:die Sprecher:in für Verwaltung den Fachschaftsrat.
+'S Sollte ein gewähltes Mitglied drei Mal in Folge unentschuldigt und ohne benannte zeitweilige Vertretung den 
+ordentlichen Sitzungen des Fachschaftsrates fernbleiben, verliert das Mitglied seine Mitgliedschaft'. Entsprechend wird 
+das Stimmrecht auf \edit{das nächste stellvertretende Mitglied der Liste entsprechend} der amtlichen Wahlergebnisse 
+übertragen'. Darüber informiert \edit{die Sprecherin oder der Sprecher} für Verwaltung den Fachschaftsrat.
 
 \Clause{title={Änderungen der Geschäftsordnung}}
 
-Eine Änderung der Geschäftsordnung des Fachschaftsrates wird, analog einer Satzungsänderung der Studierendenschaft, entsprechend dem Hochschulgesetz des Landes Sachsen-Anhalt, mit der Mehrheit der abgegebenen gültigen Stimmen beschlossen.
+Eine Änderung der Geschäftsordnung des Fachschaftsrates wird\delete{, analog einer Satzungsänderung der 
+Studierendenschaft, entsprechend dem Hochschulgesetz des Landes Sachsen-Anhalt,} mit der Mehrheit der abgegebenen 
+gültigen Stimmen beschlossen.\footnote{\add{Die benötigte Mehrheit zur Änderung der Geschäftsordnung ergibt sich 
+(analog für die Satzung der Studierendenschaft) entsprechend dem Hochschulgesetz für das Land Sachsen-Anhalt. Eine 
+Änderung jener Mehrheit ist nicht rechtskräftig.}}
 
 Änderungen treten mit Beschluss sofort in Kraft.
 
@@ -423,9 +461,9 @@ Die Geschäftsordnung tritt mit Beschlussfassung in Kraft.
 
 Die hier verwendeten Funktionsbezeichnungen gelten für alle Geschlechter.
 
-'S Sollte eine Klausel dieser Geschäftsordnung unwirksam sein oder werden, so wird hiervon die Wirksamkeit der übrigen Geschäftsordnung nicht berührt'.
-Unwirksame Klauseln sind im Wege der Auslegung zu ergänzen'.
-Sollte dies nicht möglich sein, tritt an deren Stelle dispositives Gesetzesrecht.
+'S Sollte eine Klausel dieser Geschäftsordnung unwirksam sein oder werden, so wird hiervon die Wirksamkeit der übrigen 
+Geschäftsordnung nicht berührt'. Unwirksame Klauseln sind im Wege der Auslegung zu ergänzen'. Sollte dies nicht möglich 
+sein, tritt an deren Stelle dispositives Gesetzesrecht.
 
 Die Geschäftsordnung ist dem Studierendenrat anzuzeigen und von diesem zu veröffentlichen.
 
@@ -433,12 +471,17 @@ Die Geschäftsordnung ist dem Studierendenrat anzuzeigen und von diesem zu verö
 
 \vspace{1cm}
 
-Magdeburg, den 23.11.2020
+Magdeburg, den 27.06.2022
 
 \vspace{1cm}
 
-\rule{5cm}{.3pt} \hfill \rule{5cm}{.3pt} \\
-Sprecher:in für Verwaltung \hfill Sprecher:in für Finanzen \\
-Aiven Timptner \hfill Lars Pakusch \\
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ccc}
+		\cmidrule(lr){1-1} \cmidrule(lr){2-2} \cmidrule(lr){3-3}
+		Sprecher für Verwaltung & Sprecherin für Finanzen & Spr. für Öffentlichkeitsarbeit \\
+		Aiven Timptner & Paula Hünecke & Johanna Kühn
+	\end{tabular}
+\end{table}
 
 \end{document}
